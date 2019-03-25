@@ -14,13 +14,11 @@ window.addEventListener('load', () => {
 
       const proxy = 'https://cors-anywhere.herokuapp.com/';
       const api = `${proxy}https://api.darksky.net/forecast/4846c6ad69c6603ba4cde2e5c9d6bc4f/${lat},${long}`;
-      console.log(long);
       fetch(api)
         .then((r) => {
           return r.json();
         })
         .then((data) => {
-          console.log(data.currently, data);
           const { temperature, summary, icon } = data.currently;
 
           temperatureDegree.textContent = (
