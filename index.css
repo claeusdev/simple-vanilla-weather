@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -moz-font-feature-settings: 'kern';
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+.location,
+.temperature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.temperature {
+  padding: 20px;
+  padding-top: 35px;
+  flex-direction: column;
+}
+
+.location {
+  border-bottom: 2px dashed #EB985F;
+}
+
+
+.temperature_degree{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.temperature_degree > .temperature_degree-number {
+  font-size: 50px;
+  font-weight: bold;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Weather</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="app">
+    <div class="location">
+      <h1 class="location_timezone">
+        TimeZone
+      </h1>
+    </div>
+
+    <div class="temperature">
+      <canvas id="icon1" width="128" height="128"></canvas>
+
+      <div class="temperature_degree">
+        <h1 class="temperature_degree-number">34</h1>
+        <h1 class="temperature_degree-unit">C</h1>
+      </div>
+      <div class="temperature_description">
+        It's awesomely cold
+      </div>
+    </div>
+  </div>
+
+  <script src="skycons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
